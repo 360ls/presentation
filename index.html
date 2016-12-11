@@ -47,8 +47,8 @@
           </p>
           <ul>
             <li>Stitcher</li>
-            <li>Wowza Server</li>
             <li>Electron application</li>
+            <li>Wowza Server</li>
             <li>Web application</li>
             <li>Configuration Manager</li>
           </ul>
@@ -67,6 +67,25 @@
             <li>
               With Electron we could use any of the available Front End technologies
               to develop our application.
+            </li>
+          </ul>
+        </section>
+         <section>
+          <h2>Wowza Server</h2>
+          <ul>
+            <li>
+              Wowza is a cloud streaming service that makes live feeds easy to work with.
+            </li>
+            <li>
+              We have an AWS instance that is running Wowza, this is the place that the desktop app pushes
+              its live feed.
+            </li>
+            <li>
+              Wowza then encodes the live stream to MPEG-Dash
+            </li>
+            <li>
+              The Django web app can then look for any live streams coming out of this server, Wowza
+              Wowza effectively serves as the hub for live streams.
             </li>
           </ul>
         </section>
