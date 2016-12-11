@@ -47,8 +47,8 @@
           </p>
           <ul>
             <li>Stitcher</li>
-            <li>Desktop application</li>
             <li>Wowza Server</li>
+            <li>Desktop application</li>
             <li>Web application</li>
             <li>Configuration Manager</li>
           </ul>
@@ -77,6 +77,24 @@
             </li>
           </ul>
         </section>
+         <section>
+          <h2>Wowza Server</h2>
+          <ul>
+            <li>
+              A cloud streaming framework that helps manage live streams
+            </li>
+            <li>
+              We have an AWS instance that is running Wowza, this is the place that the desktop app pushes
+              its live feed.
+            </li>
+            <li>
+              Wowza then encodes the live stream to MPEG-Dash.
+            </li>
+            <li>
+              Serves as a hub for all live streams coming from the desktop.
+            </li>
+          </ul>
+        </section>
         <section>
           <h2>Desktop Application</h2>
           <ul>
@@ -97,24 +115,6 @@
             </li>
           </ul>
         </section>
-         <section>
-          <h2>Wowza Server</h2>
-          <ul>
-            <li>
-              A cloud streaming framework that helps manage live streams
-            </li>
-            <li>
-              We have an AWS instance that is running Wowza, this is the place that the desktop app pushes
-              its live feed.
-            </li>
-            <li>
-              Wowza then encodes the live stream to MPEG-Dash.
-            </li>
-            <li>
-              Serves as a hub for all live streams coming from the desktop.
-            </li>
-          </ul>
-        </section>
         <section>
           <h2>Web Application</h2>
           <ul>
@@ -122,7 +122,7 @@
               <b>Purpose:</b> remotely view live streamed and stored videos
             </li>
             <li>
-              <b>Technologies:</b> Django/Python with a JavaScript front end hostedon Heroku
+              <b>Technologies:</b> Django/Python with a JavaScript front end hosted on Heroku
             </li>
             <li>
               <b>Live Mode:</b> looks for live streams being pushed by Wowza and renders them in our 360 player.
