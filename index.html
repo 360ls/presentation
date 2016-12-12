@@ -53,47 +53,22 @@
             <li>Configuration Manager</li>
           </ul>
         </section>
+        <section data-background="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif">
+          <h2>Demo!</h2>
+        </section>
+        <section>
+          <h2>Demo Overview</h2>
+          <ol>
+            <li>Record and preview a video on the Desktop app</li>
+            <li>View a recorded video on the Desktop app.</li>
+            <li>Live stream a video.</li>
+            <li>View the live stream in the web app.</li>
+            <li>View stitched, recorded videos in the web app</li>
+          </ol>
+        </section>
         <section>
           <h2>360ls Design Overview</h2>
           <img src="img/360lsDesign.jpg" alt="architecture"/>
-        </section>
-        <section>
-          <h2>Stitcher</h2>
-          <ul>
-            <li>
-              <b>Technologies:</b> Python and OpenCV
-            </li>
-            <li>
-              <b>Challenges:</b>
-              <ul>
-                <li>Correcting for distortion on our cameras</li>
-                <li>Stitching even when there were insufficient key points to match</li>
-                <li>Stitching at 30+ FPS</li>
-                <li>Computer vision complexity and CPU overload</li>
-              </ul>
-            </li>
-            <li>
-              <b>Final Product:</b> A stitching algorithm that takes 2 incoming feeds
-              and outputs single panoramic video.
-            </li>
-          </ul>
-        </section>
-         <section>
-          <h2>Wowza Server Instance</h2>
-          <ul>
-            <li>
-              A cloud streaming framework that helps manage live streams
-            </li>
-            <li>
-              We have an AWS instance that is running Wowza, which is where the desktop app pushes its live feed.
-            </li>
-            <li>
-              Wowza then encodes the live stream to MPEG-Dash.
-            </li>
-            <li>
-              Serves as a hub for all live streams coming from the desktop.
-            </li>
-          </ul>
         </section>
         <section>
           <h2>Desktop Application</h2>
@@ -117,6 +92,23 @@
             </li>
           </ul>
         </section>
+         <section>
+          <h2>Wowza Server Instance</h2>
+          <ul>
+            <li>
+              A cloud streaming framework that helps manage live streams
+            </li>
+            <li>
+              We have an AWS instance that is running Wowza, which is where the desktop app pushes its live feed.
+            </li>
+            <li>
+              Wowza then encodes the live stream to MPEG-Dash.
+            </li>
+            <li>
+              Serves as a hub for all live streams coming from the desktop.
+            </li>
+          </ul>
+        </section>
         <section>
           <h2>Web Application</h2>
           <ul>
@@ -131,6 +123,27 @@
             </li>
             <li>
               <b>DVR mode:</b> Plays saved videos.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Stitcher</h2>
+          <ul>
+            <li>
+              <b>Technologies:</b> Python and OpenCV
+            </li>
+            <li>
+              <b>Challenges:</b>
+              <ul>
+                <li>Correcting for distortion on our cameras</li>
+                <li>Stitching even when there were insufficient key points to match</li>
+                <li>Stitching at 30+ FPS</li>
+                <li>Computer vision complexity and CPU overload</li>
+              </ul>
+            </li>
+            <li>
+              <b>Final Product:</b> A stitching algorithm that takes 2 incoming feeds
+              and outputs single panoramic video.
             </li>
           </ul>
         </section>
@@ -154,19 +167,6 @@
               and binaries.
             </li>
           </ul>
-        </section>
-        <section>
-          <h2>Demo Overview</h2>
-          <ol>
-            <li>Record and preview a video on the Desktop app</li>
-            <li>View a recorded video on the Desktop app.</li>
-            <li>Live stream a video.</li>
-            <li>View the live stream in the web app.</li>
-            <li>View stitched, recorded videos in the web app</li>
-          </ol>
-        </section>
-        <section data-background="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif">
-          <h2>Demo!</h2>
         </section>
       </div>
     </div>
